@@ -6,14 +6,14 @@ seznam_vygenerovanych_cisel = []
 body = [0]
 
 
-# print("Vítej v mojí hře Kostky")
-# time.sleep(1.5)
+print("Vítej v mojí hře Kostky")
+time.sleep(1.5)
 
-# jmeno = input(str("Napište své jméno: "))
-# time.sleep(1)
+jmeno = input(str("Napište své jméno: "))
+time.sleep(1)
 
-# print("Pro spuštění hry zmáčkněte Enter.")
-# input()
+print("Pro spuštění hry zmáčkněte Enter.")
+input()
 prvni_hod = random.randint(1, 6)
 druhy_hod = random.randint(1, 6)
 treti_hod = random.randint(1, 6)
@@ -74,7 +74,7 @@ dva = 2
 dvojky = seznam_vygenerovanych_cisel.count(2)
 print(f"Počet hozených dvojek: {dvojky}")
 
-#tři dvojka
+#tři dvojky
 if dvojky == 3:
     body.append(2 * 100)
 
@@ -177,7 +177,7 @@ elif petky == 6:
 
 
 
-#---------Trojky---------
+#---------Šestky---------
 sest = 6
 
 #počet hozených šestek
@@ -203,67 +203,233 @@ elif sestky == 6:
 
 
 #---------3 Dvojice---------
+    
+#cyklus, který prověří každou možnou kombinaci tří dvojic    
 while True:
     if jednicky == 2:
         if dvojky == 2:
-            if trojky or ctyrky or petky or sestky == 2:
+            if trojky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:
+                break
+
         elif trojky == 2:
-            if dvojky or ctyrky or petky or sestky == 2:
+            if dvojky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:
+                break
+
         elif ctyrky == 2:
-            if dvojky or trojky or petky or sestky == 2:
+            if dvojky == 2 or trojky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:
+                break
+
         elif petky == 2:
-            if dvojky or trojky or ctyrky or sestky == 2:
+            if dvojky == 2 or trojky == 2 or ctyrky == 2 or sestky == 2:
                 body.append(1000)
+                break
+            
+            else:
                 break
         elif sestky == 2:
-            if dvojky or trojky or ctyrky or petky == 2:
+            if dvojky == 2 or trojky == 2 or ctyrky == 2 or petky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+        else:    
+            break
 
     if dvojky == 2:
         if jednicky == 2:
-            if trojky or ctyrky or petky or sestky == 2:
+            if trojky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+        
         elif trojky == 2:
-            if jednicky or ctyrky or petky or sestky == 2:
+            if jednicky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+        
         elif ctyrky == 2:
-            if  jednicky or trojky or petky or sestky == 2:
+            if  jednicky == 2 or trojky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+        
         elif petky == 2:
-            if jednicky or trojky or ctyrky or sestky == 2:
+            if jednicky == 2 or trojky == 2 or ctyrky == 2 or sestky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+
         elif sestky == 2:
-            if jednicky or trojky or ctyrky or petky == 2:
+            if jednicky == 2 or trojky == 2 or ctyrky == 2 or petky == 2:
                 body.append(1000)
                 break
+            else:    
+                break
+        
+        else:    
+            break
 
     if trojky == 2:
         if jednicky == 2:
-            if dvojky or ctyrky or petky or sestky == 2:
+            if dvojky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
                 body.append(1000)
+                break
+            else:    
+                break
+        
+        elif dvojky == 2:
+            if jednicky == 2 or ctyrky == 2 or petky == 2 or sestky == 2:
+                body.append(1000)
+                break
+            else:    
+                break
+        
+        elif ctyrky == 2:
+            if jednicky == 2 or dvojky == 2 or petky == 2 or sestky == 2:
+                body.append(1000)
+                break
+            else:
+                break
+
+        elif petky == 2:
+            if jednicky == 2 or dvojky == 2 or ctyrky == 2 or sestky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif sestky == 2:
+            if jednicky == 2 or dvojky == 2 or ctyrky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+        
+        else:
+            break
+
+    if ctyrky == 2:
+        if jednicky == 2:
+            if dvojky == 2 or trojky == 2 or petky == 2 or sestky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif dvojky == 2:
+            if jednicky == 2 or trojky == 2 or petky == 2 or sestky == 2:
+                body.append(1000)
+            else:
+                break
+        
+        elif trojky == 2:
+            if jednicky == 2 or dvojky == 2 or petky == 2 or sestky ==2:
+                body.append(1000)
+            else:
+                break
+
+        elif petky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or sestky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif sestky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+        
+        else:
+            break
+        
+    if petky == 2:
+        if jednicky == 2:
+            if dvojky == 2 or trojky == 2 or ctyrky == 2 or sestky == 2:
+                body.append(1000)
+            else:
                 break
         elif dvojky == 2:
-            if jednicky or ctyrky or petky or sestky == 2:
+            if jednicky == 2 or trojky == 2 or ctyrky == 2 or sestky == 2:
                 body.append(1000)
+            else:
+                break
+        elif trojky == 2:
+            if jednicky == 2 or dvojky == 2 or ctyrky == 2 or sestky == 2:
+                body.append(1000)
+            else:
                 break
         elif ctyrky == 2:
-            if jednicky or dvojky or petky or sestky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or sestky == 2:
                 body.append(1000)
+            else:
                 break
+        elif sestky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or ctyrky == 2:
+                body.append(1000)
+            else:
+                break
+
+        else:    
+            break
+
+    if sestky == 2:
+        if jednicky == 2:
+            if dvojky == 2 or trojky == 2 or ctyrky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif dvojky == 2:
+            if jednicky == 2 or trojky == 2 or ctyrky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif trojky == 2:
+            if jednicky == 2 or dvojky == 2 or ctyrky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif ctyrky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or petky == 2:
+                body.append(1000)
+            else:
+                break
+
+        elif petky == 2:
+            if jednicky == 2 or dvojky == 2 or trojky == 2 or ctyrky == 2:
+                body.append(1000)
+            else:
+                break
+        
+        else:
+            break
+    
+    else:
+        break
+
+#---------Postupka---------
+if jednicka in seznam_vygenerovanych_cisel and dva in seznam_vygenerovanych_cisel and tri in seznam_vygenerovanych_cisel and ctyri in seznam_vygenerovanych_cisel and pet in seznam_vygenerovanych_cisel and sest in seznam_vygenerovanych_cisel:
+    body.append(1500)
+
 
 #Součet bodů
 celkovy_pocet_bodu = sum(body)
 print(f"Tvůj počet bodů: {celkovy_pocet_bodu}")
-#print(f"Výhercem se stává: {jmeno}")
+
+#oznámení výherce
+print(f"Výhercem se stává: {jmeno}")
 sys.exit()
