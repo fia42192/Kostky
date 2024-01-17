@@ -12,7 +12,7 @@ time.sleep(1.5)
 jmeno = input(str("Napište své jméno: "))
 time.sleep(1)
 
-print("Pro spuštění hry zmáčkněte Enter.")
+print("Pro hození kostkou zmáčkněte Enter.")
 input()
 prvni_hod = random.randint(1, 6)
 druhy_hod = random.randint(1, 6)
