@@ -15,6 +15,6 @@ Vítej v mojí hře kostky! Tato jednoduchá hra ti umožní házet šesti kostk
 - **Tři dvojice:** Bonus za tři dvojice kostek.
 - **Postupka:** Bonus za postupku, tedy všechna čísla od 1 do 6.
 
-![Bodování Hodů]([Kostky/body.PNG](https://raw.githubusercontent.com/fia42192/Kostky/master/body.PNG))
+![Bodování Hodů](https://raw.githubusercontent.com/fia42192/Kostky/master/body.PNG)
 
 
