@@ -17,3 +17,4 @@ Vítej v mojí hře kostky! Tato jednoduchá hra ti umožní házet šesti kostk
 
 ![Bodování Hodů](Kostky/body.PNG)
 
+
