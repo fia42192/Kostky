@@ -14,19 +14,10 @@ time.sleep(1)
 
 print("Pro hození kostkou zmáčkněte Enter.")
 input()
-prvni_hod = random.randint(1, 6)
-druhy_hod = random.randint(1, 6)
-treti_hod = random.randint(1, 6)
-ctvrty_hod = random.randint(1, 6)
-paty_hod = random.randint(1, 6)
-sesty_hod = random.randint(1, 6)
 
-seznam_vygenerovanych_cisel.append(prvni_hod)
-seznam_vygenerovanych_cisel.append(druhy_hod)
-seznam_vygenerovanych_cisel.append(treti_hod)
-seznam_vygenerovanych_cisel.append(ctvrty_hod)
-seznam_vygenerovanych_cisel.append(paty_hod)
-seznam_vygenerovanych_cisel.append(sesty_hod)
+for i in range(6):
+    hod = random.randint(1, 6)
+    seznam_vygenerovanych_cisel.append(hod)
 
 
 hozena_cisla = ', '.join(map(str, seznam_vygenerovanych_cisel))
